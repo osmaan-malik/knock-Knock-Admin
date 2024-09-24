@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knock Knock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <main>
+        <div
+            class="sidebar bg-dark-grey-color text-white position-fixed top-0 start-0 vh-100 py-4 d-flex flex-column justify-content-between">
+
+            <ul class="nav flex-column align-items-center h-100">
+                <img class="mb-4 pb-4" src="./assets/images/knock-knock-logo-white-small.svg" alt="">
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24.551" height="18.822"
+                            viewBox="0 0 24.551 18.822">
+                            <g id="Layer_1" transform="translate(-1 -4.5)">
+                                <g id="Group_778" data-name="Group 778" transform="translate(1 4.5)">
+                                    <path id="Path_3719" data-name="Path 3719"
+                                        d="M23.1,19.288H3.455A2.46,2.46,0,0,1,1,16.823V6.965A2.46,2.46,0,0,1,3.455,4.5H23.1a2.46,2.46,0,0,1,2.455,2.465v9.859A2.46,2.46,0,0,1,23.1,19.288Z"
+                                        transform="translate(-1 -4.5)" fill="#707070" />
+                                    <path id="Path_3720" data-name="Path 3720"
+                                        d="M19.391,26.921H9.478A2.45,2.45,0,0,1,7,24.5H21.869A2.45,2.45,0,0,1,19.391,26.921Z"
+                                        transform="translate(-2.159 -8.098)" fill="#707070" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.262" height="18.121"
+                            viewBox="0 0 16.262 18.121">
+                            <path id="Path_3721" data-name="Path 3721"
+                                d="M6.967,6.664a4.414,4.414,0,1,1,4.414,4.414A4.419,4.419,0,0,1,6.967,6.664Zm7.2,5.808H8.593A5.35,5.35,0,0,0,3.25,17.815a2.558,2.558,0,0,0,2.555,2.555H16.957a2.558,2.558,0,0,0,2.555-2.555A5.35,5.35,0,0,0,14.169,12.472Z"
+                                transform="translate(-3.25 -2.25)" fill="#707070" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21.124" height="16.475"
+                            viewBox="0 0 21.124 16.475">
+                            <path id="Path_3722" data-name="Path 3722"
+                                d="M31.915,93.4h1.768a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H31.915A.917.917,0,0,1,31,96.083V94.315A.917.917,0,0,1,31.915,93.4Zm6.438-12.876H51.209a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H38.353a.917.917,0,0,1-.915-.915V81.439A.917.917,0,0,1,38.353,80.524Zm-6.438,0h1.768a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H31.915A.917.917,0,0,1,31,83.207V81.439A.917.917,0,0,1,31.915,80.524Zm6.438,6.438H51.209a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H38.353a.917.917,0,0,1-.915-.915V87.877A.917.917,0,0,1,38.353,86.962Zm-6.438,0h1.768a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H31.915A.917.917,0,0,1,31,89.645V87.877A.917.917,0,0,1,31.915,86.962ZM38.353,93.4H51.209a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H38.353a.917.917,0,0,1-.915-.915V94.315A.917.917,0,0,1,38.353,93.4Z"
+                                transform="translate(-31 -80.524)" fill="#707070" fill-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.85" viewBox="0 0 18 19.85">
+                            <path id="Path_3723" data-name="Path 3723"
+                                d="M5,2H19a2.006,2.006,0,0,1,2,2V19.2a2.01,2.01,0,0,1-2.7,1.9l-1.6-.6a1.6,1.6,0,0,0-1.5.1l-2.4,1.1a2.208,2.208,0,0,1-1.6,0L8.8,20.6a2.573,2.573,0,0,0-1.5-.1L5.7,21A2,2,0,0,1,3,19.2V4A2.006,2.006,0,0,1,5,2ZM17,7.8a.8.8,0,0,0,0-1.6H7a.86.86,0,0,0-.8.8.86.86,0,0,0,.8.8Zm.8,3.2a.789.789,0,0,1-.8.8H7a.789.789,0,0,1-.8-.8.736.736,0,0,1,.8-.8H17A.86.86,0,0,1,17.8,11ZM12,15.8a.789.789,0,0,0,.8-.8.736.736,0,0,0-.8-.8H7a.789.789,0,0,0-.8.8.736.736,0,0,0,.8.8Z"
+                                transform="translate(-3 -2)" fill="#707070" fill-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg id="Group_787" data-name="Group 787" xmlns="http://www.w3.org/2000/svg" width="17.531"
+                            height="16.557" viewBox="0 0 17.531 16.557">
+                            <path id="Path_3725" data-name="Path 3725"
+                                d="M.487,234.668H2.435a.487.487,0,0,1,.487.487v4.87a.487.487,0,0,1-.487.487H.487A.487.487,0,0,1,0,240.025v-4.87A.487.487,0,0,1,.487,234.668Zm0,0"
+                                transform="translate(0 -223.954)" fill="#707070" />
+                            <path id="Path_3726" data-name="Path 3726"
+                                d="M107.155,149.332H109.1a.487.487,0,0,1,.487.487v8.766a.487.487,0,0,1-.487.487h-1.948a.487.487,0,0,1-.487-.487v-8.766A.487.487,0,0,1,107.155,149.332Zm0,0"
+                                transform="translate(-101.798 -142.514)" fill="#707070" />
+                            <path id="Path_3727" data-name="Path 3727"
+                                d="M213.819,192h1.948a.487.487,0,0,1,.487.487V199.3a.487.487,0,0,1-.487.487h-1.948a.487.487,0,0,1-.487-.487v-6.818A.487.487,0,0,1,213.819,192Zm0,0"
+                                transform="translate(-203.593 -183.234)" fill="#707070" />
+                            <path id="Path_3728" data-name="Path 3728"
+                                d="M320.487,128h1.948a.487.487,0,0,1,.487.487v9.74a.487.487,0,0,1-.487.487h-1.948a.487.487,0,0,1-.487-.487v-9.74A.487.487,0,0,1,320.487,128Zm0,0"
+                                transform="translate(-305.391 -122.156)" fill="#707070" />
+                            <path id="Path_3729" data-name="Path 3729"
+                                d="M16.07,0a1.463,1.463,0,0,0-1.461,1.461,1.444,1.444,0,0,0,.083.467L12.255,3.377a1.449,1.449,0,0,0-2.332.312L7.773,2.624a1.463,1.463,0,0,0,.019-.189,1.461,1.461,0,1,0-2.81.557L2.192,5.073a1.444,1.444,0,0,0-.731-.2,1.476,1.476,0,1,0,1.363.947l2.817-2.1a1.43,1.43,0,0,0,1.692-.222L9.778,4.7a1.46,1.46,0,0,0,2.884-.321c0-.037-.008-.072-.011-.108L15.3,2.7a1.446,1.446,0,0,0,.768.224A1.461,1.461,0,0,0,16.07,0Zm0,0"
+                                fill="#707070" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.531" height="17.531"
+                            viewBox="0 0 17.531 17.531">
+                            <g id="Group_791" data-name="Group 791" transform="translate(-3 -4.366)">
+                                <path id="Path_3731" data-name="Path 3731"
+                                    d="M21.712,12.117a.711.711,0,0,0,.712-.712V5.712a.712.712,0,0,0-1.423,0V11.4A.711.711,0,0,0,21.712,12.117Z"
+                                    transform="translate(-5.19 -0.183)" fill="#707070" />
+                                <path id="Path_3732" data-name="Path 3732"
+                                    d="M17.712,11.27a.711.711,0,0,0,.712-.712V7.712a.712.712,0,0,0-1.423,0v2.847a.711.711,0,0,0,.712.712Z"
+                                    transform="translate(-4.037 -0.76)" fill="#707070" />
+                                <path id="Path_3733" data-name="Path 3733"
+                                    d="M25.712,10.847a.711.711,0,0,0,.712-.712V8.712a.712.712,0,1,0-1.423,0v1.423A.711.711,0,0,0,25.712,10.847Z"
+                                    transform="translate(-6.343 -1.048)" fill="#707070" />
+                                <path id="Path_3734" data-name="Path 3734"
+                                    d="M20.323,18.075l-2.889-2.889a.712.712,0,0,0-.78-.152l-3.041,1.283L8.58,11.285,9.864,8.243a.712.712,0,0,0-.152-.78L6.822,4.574a.712.712,0,0,0-1.006,0L3.843,6.547h0c-2.259,2.259.317,6.34,4.242,10.265s8.006,6.5,10.265,4.242h0l1.973-1.973A.712.712,0,0,0,20.323,18.075Z"
+                                    fill="#707070" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.531" height="17.531"
+                            viewBox="0 0 17.531 17.531">
+                            <g id="Icon" transform="translate(-2.25 -2.25)">
+                                <path id="Path_3730" data-name="Path 3730"
+                                    d="M18.208,8.094h-.135l.135-.1a1.573,1.573,0,0,0,0-2.221L16.257,3.823a1.573,1.573,0,0,0-2.221,0l-.1.1v-.1A1.582,1.582,0,0,0,12.364,2.25h-2.7A1.582,1.582,0,0,0,8.094,3.823v.135l-.1-.135a1.573,1.573,0,0,0-2.221,0L3.823,5.774a1.573,1.573,0,0,0,0,2.221l.1.1h-.1A1.582,1.582,0,0,0,2.25,9.667v2.7a1.582,1.582,0,0,0,1.573,1.573h.135l-.135.1a1.573,1.573,0,0,0,0,2.221l1.951,1.951a1.573,1.573,0,0,0,2.221,0l.1-.1v.1a1.582,1.582,0,0,0,1.573,1.573h2.7a1.582,1.582,0,0,0,1.573-1.573v-.135l.1.1a1.573,1.573,0,0,0,2.221,0l1.951-1.915a1.573,1.573,0,0,0,0-2.221l-.1-.1h.1a1.582,1.582,0,0,0,1.573-1.573v-2.7A1.582,1.582,0,0,0,18.208,8.094Zm-7.192,6.293a3.371,3.371,0,1,1,3.371-3.371,3.371,3.371,0,0,1-3.371,3.371Z"
+                                    fill="#707070" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="d-flex flex-column m-0 list-unstyled text-center align-items-center">
+                <li class="pb-4" role="button" data-bs-toggle="offcanvas" href="#notificationPanel" role="button"
+                    aria-controls="notificationPanel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26.432" height="30.043" viewBox="0 0 26.432 30.043">
+                        <g id="Group_746" data-name="Group 746" transform="translate(6351 9791.042)">
+                            <path id="Path_209" data-name="Path 209"
+                                d="M27.69,17.993a14.052,14.052,0,0,1-2.3-6.432l-.158-1.506a10.077,10.077,0,0,0-20.047,0l-.158,1.506a14.052,14.052,0,0,1-2.3,6.418,4.358,4.358,0,0,0,3.632,6.788h17.7a4.358,4.358,0,0,0,3.632-6.775Z"
+                                transform="translate(-6352.989 -9792.053)" fill="#707070" />
+                            <path id="Path_210" data-name="Path 210" d="M8.57,21a8.318,8.318,0,0,0,14.482,0Z"
+                                transform="translate(-6352.879 -9786.225)" fill="#707070" />
+                        </g>
+                    </svg>
+                </li>
+                <li>
+                    <div class="user-meta">
+                        <div class="user-name">AH</div>
+                        <div class="user-status" role="button">Logout</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content p-2">
+            <div class="content-inner overflow-hidden bg-F6F8FD">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="px-2 py-2">
+                            <h2 class="fw-bold color-2f mb-2">Activities</h2>
+                            <ul class="activity-nav d-flex list-unstyled my-4 p-0 justify-content-between">
+                                <li class="active">
+                                    <a class="small text-decoration-none" href="#">Live Sessions</a>
+                                </li>
+                                <li>
+                                    <a class="small text-decoration-none" href="#">Recorded Sessions</a>
+                                </li>
+                            </ul>
+                            <div class="user-list-wrapper-outer">
+                                <div class="user-list-header">
+                                    <div class="d-flex align-items-end">
+                                        <button class="btn refresh-btn border-0 bg-white me-3"><img
+                                                src="./assets/images/refresh-icon.svg"></button>
+                                        <p class="color-2f h5 mb-0">Users <span class="grey-707-color">3 Unread</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="scrollable only-y">
+                                    <ul class="active-user-list">
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button" class="active">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                        <li role="button">
+                                            <p
+                                                class="small color-2f d-flex justify-content-between align-items-center mb-1 user-title">
+                                                Unknown User <span class="small-10 grey-707-color">7:30AM</span></p>
+                                            <p class="small-10 user-ip mb-1">192.168.0.1</p>
+                                            <p class="user-page-url small-10 mb-1">https://www.homebase.co.nz/hire/</p>
+                                            <p class="user-location small-10 mb-0"><img class="me-1"
+                                                    src="./assets/images/pin-location.svg" alt=""> Fleming Island ,
+                                                United States</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sessions-history on-hover">
+                                    <h6>Session History</h6>
+                                    <div class="session-single">
+                                        <div class="row"></div>
+
+                                        <ul id="items">
+                                            <li class="change-mouse">
+                                                <div>
+                                                    http://knock-knockapp.com/
+                                                </div>
+                                                <div>
+                                                    2024 Aug 20 , 23:55 PM - Active
+                                                </div>
+                                            </li>
+                                            <li class="change-mouse">
+                                                <div>
+                                                    http://knock-knockapp.com/
+                                                </div>
+                                                <div>
+                                                    2024 Aug 20 , 23:55 PM - Active
+                                                </div>
+                                            </li>
+                                            <li class="change-mouse">
+                                                <div>
+                                                    http://knock-knockapp.com/
+                                                </div>
+                                                <div>
+                                                    2024 Aug 20 , 23:55 PM - Active
+                                                </div>
+                                            </li>
+                                            <li class="change-mouse">
+                                                <div>
+                                                    http://knock-knockapp.com/
+                                                </div>
+                                                <div>
+                                                    2024 Aug 20 , 23:55 PM - Active
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 bg-white position-relative view-session-col">
+                        <div class="p-2">
+                            <div class="view-session-head d-flex justify-content-between align-items-center">
+                                <h4 class="color-2f fw-bold h5 mb-0">Session</h4>
+                                <div class="d-flex align-items-center justify-content-end session-timer">
+                                    <div class="count">
+                                        <div class="timer-wrapper">
+                                            <div class="timer-status"> Status:
+                                                <span class="online">Offline</span>
+                                            </div>
+                                            <div class="timer"> Total Session Time:
+                                                <span>12:23:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sessions-screen-wrapper">
+                                <div class="url-wrapper">
+                                    <input disabled="" type="text" value="https://kiwiwebsitedesign.nz/">
+                                    <div class="totaltime"> Time on this page:
+                                        <span>00:01:14</span>
+                                    </div>
+                                </div>
+                                <div class="sessions-screen">
+                                    <img class="img-fluid" src="./assets/images/session-screen.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <div class="scrollable only-y">
+                            <div class="sessions-screen-controls seesion-controls-first d-none">
+                                <div class="user-info-wrapper">
+                                    <div class="user-info">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/images/user.jpg" alt="">
+                                            <div class="status"></div>
+                                        </div>
+                                        <div class="user-controls">
+                                            <h6 class="name">
+                                                Unknown User
+                                            </h6>
+                                            <div class="user-btns">
+                                                <button class="btn">
+                                                    <img src="./assets/images/cam-green-icon.svg" alt="">
+                                                </button>
+                                                <button class="btn">
+                                                    <img src="./assets/images/mic-icon.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user-details">
+                                        <div class="col-4 user-detail-name">
+                                            <img class="me-2" src="./assets/images/location-icon.svg" alt="">
+                                            <p>Location</p>
+                                        </div>
+                                        <div class="col-8 user-detail-value">
+                                            <p class="mb-0">Islamabad</p>
+                                        </div>
+                                        <div class="col-4 user-detail-name">
+                                            <img class="me-2" src="./assets/images/browser-icon.svg" alt="">
+                                            <p>Browser</p>
+                                        </div>
+                                        <div class="col-8 user-detail-value">
+                                            <p class="mb-0">
+                                                Google Chrome
+                                            </p>
+                                        </div>
+                                        <div class="col-4 user-detail-name">
+                                            <img class="me-2" src="./assets/images/device-icon.svg" alt="">
+                                            <p>Device</p>
+                                        </div>
+                                        <div class="col-8 user-detail-value">
+                                            <p class="mb-0">
+                                                Laptop
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="top-btns">
+                                        <button class="btn icon-btn">
+                                            <div class="img-wrapper">
+                                                <img src="./assets/images/cam-icon.svg" alt=""> 
+                                            </div>
+                                            Start a Video Call
+                                        </button>
+
+                                        <button class="btn icon-btn">
+                                            <div class="img-wrapper">
+                                                <img src="./assets/images/Icon-material-chat-bubble.svg" alt="">    
+                                            </div>
+                                            Start chat
+                                        </button>
+                                        <button class="btn icon-btn" data-bs-toggle="modal" data-bs-target="#incomingCallModal">
+                                            <div class="img-wrapper">
+                                                <img src="./assets/images/chat-with-interaction.svg" alt="">
+                                            </div>
+                                            Start Interaction With Chat
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="sessions-history">
+                                    <h6>Session History</h6>
+                                    <div class="session-single">
+                                        <div class="row"></div>
+
+                                        <ul id="items">
+                                            <li class="change-mouse">
+                                                <div>
+                                                    http://knock-knockapp.com/
+                                                </div>
+                                                <div>
+                                                    2024 Aug 20 , 23:55 PM - Active
+                                                </div>
+                                            </li>
+                                            <li class="change-mouse">
+                                                <div>
+                                                    http://knock-knockapp.com/
+                                                </div>
+                                                <div>
+                                                    2024 Aug 20 , 23:55 PM - Active
+                                                </div>
+                                            </li>
+                                            <li class="change-mouse">
+                                                <div>
+                                                    http://knock-knockapp.com/
+                                                </div>
+                                                <div>
+                                                    2024 Aug 20 , 23:55 PM - Active
+                                                </div>
+                                            </li>
+                                            <li class="change-mouse">
+                                                <div>
+                                                    http://knock-knockapp.com/
+                                                </div>
+                                                <div>
+                                                    2024 Aug 20 , 23:55 PM - Active
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-call-inititated">
+                                <div class="video-call-wrapper">
+                                    <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
+                                    class="video-player-1" autoplay playsinline></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="notificationPanel"
+        aria-labelledby="notificationPanelLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="notificationPanelLabel"></h5>
+            <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="notification-panel-content">
+                <div class="d-flex justify-content-between align-items-center font-600 px-3">
+                    <p class="small mb-0 grey-2f2f-color">Notifications</p>
+                    <p class="extra-small text-decoration-underline mb-0">Mark All as Read</p>
+                </div>
+                <ul class="notification-panel-controls p-0 d-flex list-unstyled px-3 pt-2 justify-content-between mb-0">
+                    <li class="active">
+                        <p>Inbox</p>
+                        <span>32</span>
+                    </li>
+                    <li>
+                        <p>Missed Calls</p>
+                        <span>32</span>
+                    </li>
+                    <li>
+                        <p>Chat Message</p>
+                        <span>32</span>
+                    </li>
+                    <li>
+                        <p>New User</p>
+                        <span>32</span>
+                    </li>
+                </ul>
+                <div class="notification-panel-content">
+                    <div class="notification-single unread">
+                        <div class="notification-time">Just Now</div>
+                        <div class="notification-content">
+                            <div class="notification-icon-wrapper">
+                                <img src="./assets/images/user-avatar-circled.svg" alt="">
+                            </div>
+                            <div class="notification-content-inner">
+                                <p>You have a <strong>New User </strong> on site</p>
+                                <p>Unknown from, Auckland, New Zealand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification-single unread">
+                        <div class="notification-time">4min</div>
+                        <div class="notification-content">
+                            <div class="notification-icon-wrapper">
+                                <img src="./assets/images/chat-icon.svg" alt="">
+                            </div>
+                            <div class="notification-content-inner">
+                                <p>You have a <strong>New Message</strong> from <strong>Unknown User</strong></p>
+                                <p>Unknown from, Auckland, New Zealand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification-single">
+                        <div class="notification-time">12h</div>
+                        <div class="notification-content">
+                            <div class="notification-icon-wrapper">
+                                <img src="./assets/images/user-avatar-circled.svg" alt="">
+                            </div>
+                            <div class="notification-content-inner">
+                                <p>You have a <strong>New User </strong> on site</p>
+                                <p>Unknown from, Auckland, New Zealand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification-single">
+                        <div class="notification-time">16h</div>
+                        <div class="notification-content">
+                            <div class="notification-icon-wrapper">
+                                <img src="./assets/images/missed-call-icon.svg" alt="">
+                            </div>
+                            <div class="notification-content-inner">
+                                <p>You have a <strong>Missed call </strong> from <strong>Unknown User </strong> on site
+                                </p>
+                                <p>Unknown from, Auckland, New Zealand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification-single">
+                        <div class="notification-time">18h</div>
+                        <div class="notification-content">
+                            <div class="notification-icon-wrapper">
+                                <img src="./assets/images/missed-call-icon.svg" alt="">
+                            </div>
+                            <div class="notification-content-inner">
+                                <p>You have a <strong>Missed call </strong> from <strong>Unknown User </strong> on site
+                                </p>
+                                <p>Unknown from, Auckland, New Zealand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification-single">
+                        <div class="notification-time">18h</div>
+                        <div class="notification-content">
+                            <div class="notification-icon-wrapper">
+                                <img src="./assets/images/missed-call-icon.svg" alt="">
+                            </div>
+                            <div class="notification-content-inner">
+                                <p>You have a <strong>Missed call </strong> from <strong>Unknown User </strong> on site
+                                </p>
+                                <p>Unknown from, Auckland, New Zealand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="view-all-link">View All Notifications</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start Interaction Modal Start -->
+    <div class="modal fade incoming-call-modal" id="startIneractionModal" tabindex="-1"
+        aria-labelledby="startIneractionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <div class="modal-content">
+                <div class="center_custom">
+                    <div class="new_admin_calling">
+                        <div class="calling_inner_widget_div">
+                            <div class="top_btns">
+                                <button class="cross" data-bs-dismiss="modal" aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg " width="13 " height="13 "
+                                        viewBox="0 0 7.148 7.148 ">
+                                        <path id="Icon_ionic-md-close-circle " data-name="Icon ionic-md-close-circle "
+                                            d="M6.949,3.375a3.574,3.574,0,1,0,3.574,3.574A3.562,3.562,0,0,0,6.949,3.375ZM8.736,8.236l-.5.5L6.949,7.449,5.662,8.736l-.5-.5L6.449,6.949,5.162,5.662l.5-.5L6.949,6.449,8.236,5.162l.5.5L7.449,6.949Z
+                            " transform="translate(-3.375 -3.375) " fill="#fff "></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="interaction-with-chat-form-wrapper">
+                                <h4>Start Interacting with chat</h4>
+                                <div class="interaction-with-chat-form">
+                                    <input type="text" placeholder="Enter Message here..." />
+                                    <p class="error-message" ref="error_message">Enter Message here...</p>
+                                    <button ref="start_interaction_btn_text">Start Interaction</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Interaction Modal End -->
+
+
+    <!-- Switch Call modal Start -->
+
+    <div class="modal fade" id="callSwitchModal" tabindex="-1" aria-labelledby="callSwitchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img data-bs-dismiss="modal" aria-label="Close" src="./assets/images/cross-icon-video.svg" />
+                </div>
+                <div class="modal-body">
+                    <h2>Action</h2>
+                    <p>If you want switch to another user, Video call will be disconnected. Are you sure want to
+                        continue?</p>
+                    <button>Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Switch Call modal End -->
+
+
+
+    <!-- transfer chat modal Start -->
+    <div class="modal fade" id="transferModal" tabindex="-1" aria-labelledby="transferModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="transferModalLabel">Other Agents</h5>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="./assets/images/modal-close.svg" alt="" />
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="transfer-modal-cont-wrap">
+                        <div class="transfer-to-single-wrap">
+                            <img src="./assets/images/sender-profile.png" alt="" />
+                            <h3>Maria</h3>
+                            <a href="#" class="transfer-btn-modal">
+                                <img src="./assets/images/transfered-icon.svg" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="transfer-to-single-wrap">
+                            <img src="./assets/images/sender-profile.png" alt="" />
+                            <h3>Maria</h3>
+                            <a href="#" class="transfer-btn-modal">
+                                <img src="./assets/images/transfered-icon.svg" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="transfer-to-single-wrap">
+                            <img src="./assets/images/sender-profile.png" alt="" />
+                            <h3>Maria</h3>
+                            <a href="#" class="transfer-btn-modal">
+                                <img src="./assets/images/transfered-icon.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- transfer chat modal End -->
+
+
+
+    <!-- Call by user Modal Start -->
+
+    <div class="modal fade incoming-call-modal" id="incomingCallModal" tabindex="-1"
+        aria-labelledby="incomingCallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <div class="modal-content">
+                <div class="center_custom">
+                    <div class="new_admin_calling">
+                        <div class="calling_inner_widget_div">
+                            <div class="main_caller_agent_div">
+                                <div class="caller_inner">
+                                    <div class="caller-info">
+                                        <img src="./assets/images/Propertyscouts-logo.svg" alt="">
+                                        <h4>
+                                            Propertyscouts
+                                            <span>
+                                                Hamilton, New Zealand
+                                            </span>
+                                        </h4>
+                                    </div>
+
+                                    <div class="caller_agent_btns">
+                                        <button class="decline">
+                                            <div class="button-image-warpper">
+                                                <img src="./assets/images/control-icon-phone.svg" alt="" />
+                                            </div>
+                                            Decline
+                                        </button>
+                                        <button class="accept">
+                                            <div class="button-image-warpper">
+                                                <img src="./assets/images/control-icon-phone.svg" alt="" />
+                                            </div>
+                                            Accept
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="text-center text-decoration-underline text-white">Message</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call by user Modal End -->
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const userActiveList = document.querySelector('ul.active-user-list li.active');
+    const userActiveSessionHistory = document.querySelector('.sessions-history.on-hover');
+    
+userActiveList.addEventListener('mouseenter', () => {
+    userActiveSessionHistory.classList.add('view-history');
+        });
+
+        userActiveList.addEventListener('mouseleave', () => {
+            userActiveSessionHistory.classList.remove('view-history');
+        
+});
+</script>
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knock Knock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <main>
+        <div
+            class="sidebar bg-dark-grey-color text-white position-fixed top-0 start-0 vh-100 py-4 d-flex flex-column justify-content-between">
+
+            <ul class="nav flex-column align-items-center h-100">
+                <img class="mb-4 pb-4" src="./assets/images/knock-knock-logo-white-small.svg" alt="">
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24.551" height="18.822"
+                            viewBox="0 0 24.551 18.822">
+                            <g id="Layer_1" transform="translate(-1 -4.5)">
+                                <g id="Group_778" data-name="Group 778" transform="translate(1 4.5)">
+                                    <path id="Path_3719" data-name="Path 3719"
+                                        d="M23.1,19.288H3.455A2.46,2.46,0,0,1,1,16.823V6.965A2.46,2.46,0,0,1,3.455,4.5H23.1a2.46,2.46,0,0,1,2.455,2.465v9.859A2.46,2.46,0,0,1,23.1,19.288Z"
+                                        transform="translate(-1 -4.5)" fill="#707070" />
+                                    <path id="Path_3720" data-name="Path 3720"
+                                        d="M19.391,26.921H9.478A2.45,2.45,0,0,1,7,24.5H21.869A2.45,2.45,0,0,1,19.391,26.921Z"
+                                        transform="translate(-2.159 -8.098)" fill="#707070" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.262" height="18.121"
+                            viewBox="0 0 16.262 18.121">
+                            <path id="Path_3721" data-name="Path 3721"
+                                d="M6.967,6.664a4.414,4.414,0,1,1,4.414,4.414A4.419,4.419,0,0,1,6.967,6.664Zm7.2,5.808H8.593A5.35,5.35,0,0,0,3.25,17.815a2.558,2.558,0,0,0,2.555,2.555H16.957a2.558,2.558,0,0,0,2.555-2.555A5.35,5.35,0,0,0,14.169,12.472Z"
+                                transform="translate(-3.25 -2.25)" fill="#707070" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21.124" height="16.475"
+                            viewBox="0 0 21.124 16.475">
+                            <path id="Path_3722" data-name="Path 3722"
+                                d="M31.915,93.4h1.768a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H31.915A.917.917,0,0,1,31,96.083V94.315A.917.917,0,0,1,31.915,93.4Zm6.438-12.876H51.209a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H38.353a.917.917,0,0,1-.915-.915V81.439A.917.917,0,0,1,38.353,80.524Zm-6.438,0h1.768a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H31.915A.917.917,0,0,1,31,83.207V81.439A.917.917,0,0,1,31.915,80.524Zm6.438,6.438H51.209a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H38.353a.917.917,0,0,1-.915-.915V87.877A.917.917,0,0,1,38.353,86.962Zm-6.438,0h1.768a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H31.915A.917.917,0,0,1,31,89.645V87.877A.917.917,0,0,1,31.915,86.962ZM38.353,93.4H51.209a.917.917,0,0,1,.915.915v1.768a.917.917,0,0,1-.915.915H38.353a.917.917,0,0,1-.915-.915V94.315A.917.917,0,0,1,38.353,93.4Z"
+                                transform="translate(-31 -80.524)" fill="#707070" fill-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.85" viewBox="0 0 18 19.85">
+                            <path id="Path_3723" data-name="Path 3723"
+                                d="M5,2H19a2.006,2.006,0,0,1,2,2V19.2a2.01,2.01,0,0,1-2.7,1.9l-1.6-.6a1.6,1.6,0,0,0-1.5.1l-2.4,1.1a2.208,2.208,0,0,1-1.6,0L8.8,20.6a2.573,2.573,0,0,0-1.5-.1L5.7,21A2,2,0,0,1,3,19.2V4A2.006,2.006,0,0,1,5,2ZM17,7.8a.8.8,0,0,0,0-1.6H7a.86.86,0,0,0-.8.8.86.86,0,0,0,.8.8Zm.8,3.2a.789.789,0,0,1-.8.8H7a.789.789,0,0,1-.8-.8.736.736,0,0,1,.8-.8H17A.86.86,0,0,1,17.8,11ZM12,15.8a.789.789,0,0,0,.8-.8.736.736,0,0,0-.8-.8H7a.789.789,0,0,0-.8.8.736.736,0,0,0,.8.8Z"
+                                transform="translate(-3 -2)" fill="#707070" fill-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg id="Group_787" data-name="Group 787" xmlns="http://www.w3.org/2000/svg" width="17.531"
+                            height="16.557" viewBox="0 0 17.531 16.557">
+                            <path id="Path_3725" data-name="Path 3725"
+                                d="M.487,234.668H2.435a.487.487,0,0,1,.487.487v4.87a.487.487,0,0,1-.487.487H.487A.487.487,0,0,1,0,240.025v-4.87A.487.487,0,0,1,.487,234.668Zm0,0"
+                                transform="translate(0 -223.954)" fill="#707070" />
+                            <path id="Path_3726" data-name="Path 3726"
+                                d="M107.155,149.332H109.1a.487.487,0,0,1,.487.487v8.766a.487.487,0,0,1-.487.487h-1.948a.487.487,0,0,1-.487-.487v-8.766A.487.487,0,0,1,107.155,149.332Zm0,0"
+                                transform="translate(-101.798 -142.514)" fill="#707070" />
+                            <path id="Path_3727" data-name="Path 3727"
+                                d="M213.819,192h1.948a.487.487,0,0,1,.487.487V199.3a.487.487,0,0,1-.487.487h-1.948a.487.487,0,0,1-.487-.487v-6.818A.487.487,0,0,1,213.819,192Zm0,0"
+                                transform="translate(-203.593 -183.234)" fill="#707070" />
+                            <path id="Path_3728" data-name="Path 3728"
+                                d="M320.487,128h1.948a.487.487,0,0,1,.487.487v9.74a.487.487,0,0,1-.487.487h-1.948a.487.487,0,0,1-.487-.487v-9.74A.487.487,0,0,1,320.487,128Zm0,0"
+                                transform="translate(-305.391 -122.156)" fill="#707070" />
+                            <path id="Path_3729" data-name="Path 3729"
+                                d="M16.07,0a1.463,1.463,0,0,0-1.461,1.461,1.444,1.444,0,0,0,.083.467L12.255,3.377a1.449,1.449,0,0,0-2.332.312L7.773,2.624a1.463,1.463,0,0,0,.019-.189,1.461,1.461,0,1,0-2.81.557L2.192,5.073a1.444,1.444,0,0,0-.731-.2,1.476,1.476,0,1,0,1.363.947l2.817-2.1a1.43,1.43,0,0,0,1.692-.222L9.778,4.7a1.46,1.46,0,0,0,2.884-.321c0-.037-.008-.072-.011-.108L15.3,2.7a1.446,1.446,0,0,0,.768.224A1.461,1.461,0,0,0,16.07,0Zm0,0"
+                                fill="#707070" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.531" height="17.531"
+                            viewBox="0 0 17.531 17.531">
+                            <g id="Group_791" data-name="Group 791" transform="translate(-3 -4.366)">
+                                <path id="Path_3731" data-name="Path 3731"
+                                    d="M21.712,12.117a.711.711,0,0,0,.712-.712V5.712a.712.712,0,0,0-1.423,0V11.4A.711.711,0,0,0,21.712,12.117Z"
+                                    transform="translate(-5.19 -0.183)" fill="#707070" />
+                                <path id="Path_3732" data-name="Path 3732"
+                                    d="M17.712,11.27a.711.711,0,0,0,.712-.712V7.712a.712.712,0,0,0-1.423,0v2.847a.711.711,0,0,0,.712.712Z"
+                                    transform="translate(-4.037 -0.76)" fill="#707070" />
+                                <path id="Path_3733" data-name="Path 3733"
+                                    d="M25.712,10.847a.711.711,0,0,0,.712-.712V8.712a.712.712,0,1,0-1.423,0v1.423A.711.711,0,0,0,25.712,10.847Z"
+                                    transform="translate(-6.343 -1.048)" fill="#707070" />
+                                <path id="Path_3734" data-name="Path 3734"
+                                    d="M20.323,18.075l-2.889-2.889a.712.712,0,0,0-.78-.152l-3.041,1.283L8.58,11.285,9.864,8.243a.712.712,0,0,0-.152-.78L6.822,4.574a.712.712,0,0,0-1.006,0L3.843,6.547h0c-2.259,2.259.317,6.34,4.242,10.265s8.006,6.5,10.265,4.242h0l1.973-1.973A.712.712,0,0,0,20.323,18.075Z"
+                                    fill="#707070" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link active p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.531" height="17.531"
+                            viewBox="0 0 17.531 17.531">
+                            <g id="Icon" transform="translate(-2.25 -2.25)">
+                                <path id="Path_3730" data-name="Path 3730"
+                                    d="M18.208,8.094h-.135l.135-.1a1.573,1.573,0,0,0,0-2.221L16.257,3.823a1.573,1.573,0,0,0-2.221,0l-.1.1v-.1A1.582,1.582,0,0,0,12.364,2.25h-2.7A1.582,1.582,0,0,0,8.094,3.823v.135l-.1-.135a1.573,1.573,0,0,0-2.221,0L3.823,5.774a1.573,1.573,0,0,0,0,2.221l.1.1h-.1A1.582,1.582,0,0,0,2.25,9.667v2.7a1.582,1.582,0,0,0,1.573,1.573h.135l-.135.1a1.573,1.573,0,0,0,0,2.221l1.951,1.951a1.573,1.573,0,0,0,2.221,0l.1-.1v.1a1.582,1.582,0,0,0,1.573,1.573h2.7a1.582,1.582,0,0,0,1.573-1.573v-.135l.1.1a1.573,1.573,0,0,0,2.221,0l1.951-1.915a1.573,1.573,0,0,0,0-2.221l-.1-.1h.1a1.582,1.582,0,0,0,1.573-1.573v-2.7A1.582,1.582,0,0,0,18.208,8.094Zm-7.192,6.293a3.371,3.371,0,1,1,3.371-3.371,3.371,3.371,0,0,1-3.371,3.371Z"
+                                    fill="#707070" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="d-flex flex-column m-0 list-unstyled text-center align-items-center">
+                <li class="pb-4" role="button" data-bs-toggle="offcanvas" href="#notificationPanel" role="button"
+                    aria-controls="notificationPanel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26.432" height="30.043" viewBox="0 0 26.432 30.043">
+                        <g id="Group_746" data-name="Group 746" transform="translate(6351 9791.042)">
+                            <path id="Path_209" data-name="Path 209"
+                                d="M27.69,17.993a14.052,14.052,0,0,1-2.3-6.432l-.158-1.506a10.077,10.077,0,0,0-20.047,0l-.158,1.506a14.052,14.052,0,0,1-2.3,6.418,4.358,4.358,0,0,0,3.632,6.788h17.7a4.358,4.358,0,0,0,3.632-6.775Z"
+                                transform="translate(-6352.989 -9792.053)" fill="#707070" />
+                            <path id="Path_210" data-name="Path 210" d="M8.57,21a8.318,8.318,0,0,0,14.482,0Z"
+                                transform="translate(-6352.879 -9786.225)" fill="#707070" />
+                        </g>
+                    </svg>
+                </li>
+                <li>
+                    <div class="user-meta">
+                        <div class="user-name">AH</div>
+                        <div class="user-status" role="button">Logout</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content bg-color-content">
+            <div class="content-inner bg-white overflow-hidden">
+                <div class="row h-100">
+                    <div class="col-md-12 p-0 scrollable only-y h-100">
+                        <div class="settings-side-bar bg-F5F5FE p-4 scrollable only-y h-100">
+                            <h2 class="fw-bold blue-color mb-4">Settings</h2>
+                            <div class="position-relative">
+                                <input type="text" class="form-control search-field shadow-none py-2"
+                                    placeholder="Search">
+                                <img class="position-absolute top-50 start-0 translate-middle-y ms-2"
+                                    src="./assets/images/search-icon.svg" alt="">
+                            </div>
+                            <nav class="settings-menu">
+                                <ul>
+                                    <li>
+                                        <button class="btn-nav" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSettingsHome" aria-expanded="false"
+                                            aria-controls="collapseSettingsHome">
+                                            <img class="me-3" src="./assets/images/settings-home.svg"> Home
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="btn-nav" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSettingsMySettings" aria-expanded="false"
+                                            aria-controls="collapseSettingsMySettings">
+                                            <img class="me-3" src="./assets/images/settings-my-settings.svg"> My
+                                            Settings
+                                        </button>
+                                        <div class="collapse" id="collapseSettingsMySettings">
+                                            <ul>
+                                                <li><a href="#">Account Details</a></li>
+                                                <li><a href="#">Working Hours</a></li>
+                                                <li><a href="#">Audio & Video</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="btn-nav" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSettingsOrg" aria-expanded="false"
+                                            aria-controls="collapseSettingsOrg">
+                                            <img class="me-3" src="./assets/images/settings-org.svg">
+                                            Organisational Settings
+                                        </button>
+                                        <div class="collapse" id="collapseSettingsOrg">
+                                            <ul>
+                                                <li><a href="#">Display Setting</a></li>
+                                                <li><a href="#">Working Hours</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="btn-nav" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSettingsWidget" aria-expanded="false"
+                                            aria-controls="collapseSettingsWidget">
+                                            <img class="me-3" src="./assets/images/settings-widget.svg"> Widget
+                                        </button>
+                                        <div class="collapse" id="collapseSettingsWidget">
+                                            <ul>
+                                                <li><a  href="#">Script Snippet</a></li>
+                                                <li><a href="#">High Intent Pages</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="btn-nav" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSettingsWidgetDesign" aria-expanded="true"
+                                            aria-controls="collapseSettingsWidgetDesign">
+                                            <img class="me-3" src="./assets/images/settings-widget-design.svg"> Widget
+                                            Design
+                                        </button>
+                                        <div class="collapse show" id="collapseSettingsWidgetDesign">
+                                            <ul>
+                                                <li><a href="#">Layout & Message</a></li>
+                                                <li><a href="#">Widget Video</a></li>
+                                                <li><a href="#">Widget Colours</a></li>
+                                                <li><a class="active" href="#">Communication Options</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="btn-nav" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSettingsChatBot" aria-expanded="false"
+                                            aria-controls="collapseSettingsChatBot">
+                                            <img class="me-3" src="./assets/images/settings-chat-bot.svg"> Chat Bot
+                                        </button>
+                                        <div class="collapse" id="collapseSettingsChatBot">
+                                            <ul>
+                                                <li><a href="#">Chat Bot</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="settings-page-content">
+                            <div
+                                class="page-title-wrapper d-flex justify-content-start align-items-center flex-wrap py-4 px-3 mb-4 border-0">
+                                <svg role="button" class="me-3 mt-1 settings-sidebar-toggle"
+                                    xmlns="http://www.w3.org/2000/svg" width="24.98" height="26.594"
+                                    viewBox="0 0 24.98 26.594">
+                                    <g id="Path_3765" data-name="Path 3765" transform="translate(-1 0)" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path class="button-path-1"
+                                            d="M23.98,4.421V22.173a2.423,2.423,0,0,1-2.421,2.421H11.876V2h9.683A2.423,2.423,0,0,1,23.98,4.421ZM5.421,2h4.842V24.594H5.421A2.423,2.423,0,0,1,3,22.173V4.421A2.423,2.423,0,0,1,5.421,2Zm1.85,8.306L4.85,12.726a.807.807,0,0,0,0,1.141l2.421,2.421a.807.807,0,1,0,1.141-1.141L6.562,13.3l1.85-1.85a.807.807,0,1,0-1.141-1.141Z"
+                                            stroke="none" />
+                                        <path class="button-path-2"
+                                            d="M 5.420755386352539 2.000003814697266 C 4.085874557495117 2.000003814697266 2.999994277954102 3.085874557495117 2.999994277954102 4.420753479003906 L 2.999994277954102 22.17299461364746 C 2.999994277954102 23.50787353515625 4.085874557495117 24.5937442779541 5.420755386352539 24.5937442779541 L 10.26227569580078 24.5937442779541 L 10.26227569580078 2.000003814697266 L 5.420755386352539 2.000003814697266 M 7.841514587402344 16.52455520629883 C 7.635055541992188 16.52455520629883 7.428604125976562 16.44575500488281 7.270994186401367 16.28815460205078 L 4.850244522094727 13.86739444732666 C 4.5350341796875 13.5521936416626 4.5350341796875 13.04156398773193 4.850244522094727 12.72635364532471 L 7.270994186401367 10.30559349060059 C 7.586206436157227 9.990396499633789 8.096834182739258 9.990396499633789 8.41203498840332 10.30559349060059 C 8.727235794067383 10.62080383300781 8.727235794067383 11.13143444061279 8.41203498840332 11.44663429260254 L 6.561794281005859 13.29687404632568 L 8.41203498840332 15.14711380004883 C 8.727235794067383 15.46232414245605 8.727235794067383 15.97294425964355 8.41203498840332 16.28815460205078 C 8.254434585571289 16.44575500488281 8.047975540161133 16.52455520629883 7.841514587402344 16.52455520629883 M 11.87611484527588 2.000003814697266 L 11.87611484527588 24.5937442779541 L 21.55915451049805 24.5937442779541 C 22.89403533935547 24.5937442779541 23.97990417480469 23.50787353515625 23.97990417480469 22.17299461364746 L 23.97990417480469 4.420753479003906 C 23.97990417480469 3.085874557495117 22.89403533935547 2.000003814697266 21.55915451049805 2.000003814697266 L 11.87611484527588 2.000003814697266 M 5.420755386352539 3.814697265625e-06 L 10.26227569580078 3.814697265625e-06 C 10.54940605163574 3.814697265625e-06 10.82238388061523 0.0605010986328125 11.06919479370117 0.1694602966308594 C 11.31600666046143 0.0605010986328125 11.5889835357666 3.814697265625e-06 11.87611484527588 3.814697265625e-06 L 21.55915451049805 3.814697265625e-06 C 23.99676513671875 3.814697265625e-06 25.97990417480469 1.983144760131836 25.97990417480469 4.420753479003906 L 25.97990417480469 22.17299461364746 C 25.97990417480469 24.61060333251953 23.99676513671875 26.5937442779541 21.55915451049805 26.5937442779541 L 11.87611484527588 26.5937442779541 C 11.5889835357666 26.5937442779541 11.31600666046143 26.53324699401855 11.06919479370117 26.42428779602051 C 10.82238388061523 26.53324699401855 10.54940605163574 26.5937442779541 10.26227569580078 26.5937442779541 L 5.420755386352539 26.5937442779541 C 2.983135223388672 26.5937442779541 0.9999942779541016 24.61060333251953 0.9999942779541016 22.17299461364746 L 0.9999942779541016 4.420753479003906 C 0.9999942779541016 1.983144760131836 2.983135223388672 3.814697265625e-06 5.420755386352539 3.814697265625e-06 Z"
+                                            stroke="none" fill="#2f2f2f" />
+                                    </g>
+                                </svg>
+                                <h2 class="fw-bold blue-color mb-0"> Widget Design</h2>
+                            </div>
+                            <div class="settings-page-content-inner vh-100">
+                                <div class="row h-100">
+                                    <div class="col-md-12">
+                                        <ul class="seetings-inner-nav">
+                                            <li>
+                                                <a href="#">
+                                                    Widget Layout & Messages
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Widget Video
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Widget Colours
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="#">
+                                                    Communication Options
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="row bg-white h-100">
+                                        <div class="col-md-6 bg-white">
+                                            <div class="row p-4 widget-communication-row">
+                                                <div class="col-md-12">
+                                                    <p class="blue-color fw-bold">Communication Options</p>
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <div class="form-check form-switch">
+                                                            <input role="button" class="form-check-input shadow-none"
+                                                                type="checkbox" id="memberAllControl" checked>
+                                                            <label class="form-check-label blue-color"
+                                                                for="memberAllControl">Allow Video Call</label>
+                                                        </div>
+                                                        <p class="grey-707-color mb-0 ms-3">Disable</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <div class="form-check form-switch">
+                                                            <input role="button" class="form-check-input shadow-none"
+                                                                type="checkbox" id="memberAllControl" checked>
+                                                            <label class="form-check-label blue-color"
+                                                                for="memberAllControl">Allow Audio Call</label>
+                                                        </div>
+                                                        <p class="grey-707-color mb-0 ms-3">Disable</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <div class="form-check form-switch">
+                                                            <input role="button" class="form-check-input shadow-none"
+                                                                type="checkbox" id="memberAllControl" checked>
+                                                            <label class="form-check-label blue-color"
+                                                                for="memberAllControl">Allow Chat</label>
+                                                        </div>
+                                                        <p class="grey-707-color mb-0 ms-3">Disable</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 bg-F5F5FE py-4">
+                                            <div class="kk-widget-main-screen-wrapper">
+                                                <div class="kk-widget-main-screen-wrapper-inner">
+                                                    <video class="company_main_video_screen " playsinline="" loop="true"
+                                                        autoplay="autoplay" muted="true"
+                                                        src="./assets/images/demo-video.mp4"></video>
+                                                    <div class="kk-widget-main-screen-content-wrapper">
+                                                        <div class="kk-widget-main-screen-content-head">
+                                                            <img src="./assets/images/app-icon-white.svg" alt="">
+                                                            <img src="./assets/images/minimize-icon.svg" alt=""
+                                                                class="minimze-icon-main-screen">
+                                                        </div>
+                                                        <div class="kk-widget-main-screen-content">
+
+                                                            <p class="kk_online_title_text_second_heading mb-3">
+                                                                Our agent is online, Talk Now!
+                                                            </p>
+                                                            <div class="kk-controls-btn-wrapper">
+                                                                <button class="kk-video-btn">
+                                                                    <svg id="Group_475" data-name="Group 475"
+                                                                        xmlns="http://www.w3.org/2000/svg" width="21.45"
+                                                                        height="12.581" viewBox="0 0 21.45 12.581">
+                                                                        <rect id="Rectangle_377"
+                                                                            data-name="Rectangle 377" width="15.727"
+                                                                            height="12.581" rx="3"
+                                                                            transform="translate(0 0)" fill="#fff" />
+                                                                        <path id="Path_233" data-name="Path 233"
+                                                                            d="M49.169,21.465v9.265a.465.465,0,0,1-.232.4.455.455,0,0,1-.232.06.467.467,0,0,1-.232-.06l-3.474-2V23.063l3.474-2a.484.484,0,0,1,.463,0A.465.465,0,0,1,49.169,21.465Z"
+                                                                            transform="translate(-27.719 -19.729)"
+                                                                            fill="#fff" />
+                                                                    </svg>
+                                                                    Video
+                                                                </button>
+                                                                <button class="kk-audio-btn">
+                                                                    <svg id="Mic_On" data-name="Mic On"
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        width="10.436" height="16.671"
+                                                                        viewBox="0 0 10.436 16.671">
+                                                                        <path id="Path_234" data-name="Path 234"
+                                                                            d="M17.218,4.255V9.894a2.452,2.452,0,0,1-2.609,2.255A2.452,2.452,0,0,1,12,9.894V4.255A2.452,2.452,0,0,1,14.609,2,2.452,2.452,0,0,1,17.218,4.255Z"
+                                                                            transform="translate(-9.391 -2)"
+                                                                            fill="#fff" />
+                                                                        <path id="Path_235" data-name="Path 235"
+                                                                            d="M13.87,20.135v2.648h2.609a.652.652,0,1,1,0,1.3H9.957a.652.652,0,0,1,0-1.3h2.609V20.135A4.832,4.832,0,0,1,8,15.609V13.652a.652.652,0,1,1,1.3,0v1.957c0,1.8,1.755,3.261,3.913,3.261s3.913-1.461,3.913-3.261V13.652a.652.652,0,1,1,1.3,0v1.957A4.832,4.832,0,0,1,13.87,20.135Z"
+                                                                            transform="translate(-8 -7.417)"
+                                                                            fill="#fff" />
+                                                                    </svg>
+                                                                    AUDIO
+                                                                </button>
+                                                                <button class="kk-chat-btn open_chat_without_calling">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        width="13.773" height="13.773"
+                                                                        viewBox="0 0 13.773 13.773">
+                                                                        <path id="Icon_material-chat-bubble"
+                                                                            data-name="Icon material-chat-bubble"
+                                                                            d="M15.4,3H4.377A1.381,1.381,0,0,0,3,4.377v12.4l2.755-2.755H15.4a1.381,1.381,0,0,0,1.377-1.377V4.377A1.381,1.381,0,0,0,15.4,3Z"
+                                                                            transform="translate(-3 -3)" fill="#fff" />
+                                                                    </svg>
+                                                                    CHAT
+                                                                </button>
+                                                            </div>
+                                                            <div class="agents-info" style="display: flex;">
+                                                                <p>Choose an agent</p>
+                                                                <ul class="user-list">
+                                                                    <li>
+                                                                        <img src="./assets/images/placeholder-agent.svg"
+                                                                            class="first_img">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="./assets/images/placeholder-agent.svg"
+                                                                            class="first_img">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="./assets/images/placeholder-agent.svg"
+                                                                            class="first_img">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="./assets/images/placeholder-agent.svg"
+                                                                            class="first_img">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="./assets/images/placeholder-agent.svg"
+                                                                            class="first_img">
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="kk-widget-main-screen-copyright">
+                                                    <p>Powered by</p>
+                                                    <a href="https://knock-knockapp.com/" target="_blank">
+                                                        <img src="https://knock-knock-be-stage-linux.azurewebsites.net/files/knock-knock-logo-new.svg"
+                                                            alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="kk-mini-widget kk-widget-screen kk_mini_screen">
+                                                <div class="kk-greetings-wrapper">
+                                                    <video class="mini-screen-video localVideo"
+                                                        src="./assets/images/demo-video.mp4" playsinline="" loop="true"
+                                                        autoplay="autoplay" muted=""
+                                                        :src="company.company_video"></video>
+                                                    <div class="kk-greetings-wrapper-content">
+                                                        <p class="kk-greeting-text-before-load">Need Help? Talk to me…
+                                                        </p>
+                                                        <p
+                                                            class="kk-greeting-text-after-load kk-greeting-text-loaded d-none">
+                                                            <span class="kk-greeting-text-after-load-text d-none">Call
+                                                                Us</span>
+                                                            <span class="d-none">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="27.279"
+                                                                    height="16" viewBox="0 0 27.279 16">
+                                                                    <g id="Group_475" data-name="Group 475"
+                                                                        transform="translate(-9.642 -18.205)">
+                                                                        <rect id="Rectangle_377"
+                                                                            data-name="Rectangle 377" width="20"
+                                                                            height="16" rx="3"
+                                                                            transform="translate(9.642 18.205)"
+                                                                            fill="#fff" />
+                                                                        <path id="Path_233" data-name="Path 233"
+                                                                            d="M50.3,21.59V33.372a.591.591,0,0,1-.295.513.579.579,0,0,1-.295.077.594.594,0,0,1-.295-.077L45,31.34V23.623l4.418-2.545a.615.615,0,0,1,.589,0A.591.591,0,0,1,50.3,21.59Z"
+                                                                            transform="translate(-13.381 -1.179)"
+                                                                            fill="#fff" />
+                                                                    </g>
+                                                                </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13.272"
+                                                                    height="21.201" viewBox="0 0 13.272 21.201">
+                                                                    <g id="Mic_On" data-name="Mic On"
+                                                                        transform="translate(-8 -3.722)">
+                                                                        <path id="Path_234" data-name="Path 234"
+                                                                            d="M18.636,4.868v7.17a3.118,3.118,0,0,1-3.318,2.868A3.118,3.118,0,0,1,12,12.039V4.868A3.118,3.118,0,0,1,15.318,2a3.118,3.118,0,0,1,3.318,2.868Z"
+                                                                            transform="translate(-0.682 1.722)"
+                                                                            fill="#fff" />
+                                                                        <path id="Path_235" data-name="Path 235"
+                                                                            d="M15.465,22.074v3.368h3.318a.829.829,0,0,1,0,1.659H10.488a.829.829,0,0,1,0-1.659h3.318V22.074C10.538,21.718,8,19.271,8,16.318V13.829a.829.829,0,1,1,1.659,0v2.488c0,2.289,2.231,4.147,4.977,4.147s4.977-1.858,4.977-4.147V13.829a.829.829,0,1,1,1.659,0v2.488C21.272,19.271,18.733,21.718,15.465,22.074Z"
+                                                                            transform="translate(0 -2.177)"
+                                                                            fill="#fff" />
+                                                                    </g>
+                                                                </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="17.516"
+                                                                    height="17.516" viewBox="0 0 17.516 17.516">
+                                                                    <path id="Icon_material-chat-bubble"
+                                                                        data-name="Icon material-chat-bubble"
+                                                                        d="M18.764,3H4.752A1.757,1.757,0,0,0,3,4.752V20.516l3.5-3.5H18.764a1.757,1.757,0,0,0,1.752-1.752V4.752A1.757,1.757,0,0,0,18.764,3Z"
+                                                                        transform="translate(-3 -3)" fill="#fff" />
+                                                                </svg>
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="notificationPanel"
+            aria-labelledby="notificationPanelLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="notificationPanelLabel"></h5>
+                <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="notification-panel-content">
+                    <div class="d-flex justify-content-between align-items-center font-600 px-3">
+                        <p class="small mb-0 grey-2f2f-color">Notifications</p>
+                        <p class="extra-small text-decoration-underline mb-0">Mark All as Read</p>
+                    </div>
+                    <ul
+                        class="notification-panel-controls p-0 d-flex list-unstyled px-3 pt-2 justify-content-between mb-0">
+                        <li class="active">
+                            <p>Inbox</p>
+                            <span>32</span>
+                        </li>
+                        <li>
+                            <p>Missed Calls</p>
+                            <span>32</span>
+                        </li>
+                        <li>
+                            <p>Chat Message</p>
+                            <span>32</span>
+                        </li>
+                        <li>
+                            <p>New User</p>
+                            <span>32</span>
+                        </li>
+                    </ul>
+                    <div class="notification-panel-content">
+                        <div class="notification-single unread">
+                            <div class="notification-time">Just Now</div>
+                            <div class="notification-content">
+                                <div class="notification-icon-wrapper">
+                                    <img src="./assets/images/user-avatar-circled.svg" alt="">
+                                </div>
+                                <div class="notification-content-inner">
+                                    <p>You have a <strong>New User </strong> on site</p>
+                                    <p>Unknown from, Auckland, New Zealand</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-single unread">
+                            <div class="notification-time">4min</div>
+                            <div class="notification-content">
+                                <div class="notification-icon-wrapper">
+                                    <img src="./assets/images/chat-icon.svg" alt="">
+                                </div>
+                                <div class="notification-content-inner">
+                                    <p>You have a <strong>New Message</strong> from <strong>Unknown User</strong></p>
+                                    <p>Unknown from, Auckland, New Zealand</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-single">
+                            <div class="notification-time">12h</div>
+                            <div class="notification-content">
+                                <div class="notification-icon-wrapper">
+                                    <img src="./assets/images/user-avatar-circled.svg" alt="">
+                                </div>
+                                <div class="notification-content-inner">
+                                    <p>You have a <strong>New User </strong> on site</p>
+                                    <p>Unknown from, Auckland, New Zealand</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-single">
+                            <div class="notification-time">16h</div>
+                            <div class="notification-content">
+                                <div class="notification-icon-wrapper">
+                                    <img src="./assets/images/missed-call-icon.svg" alt="">
+                                </div>
+                                <div class="notification-content-inner">
+                                    <p>You have a <strong>Missed call </strong> from <strong>Unknown User </strong> on
+                                        site
+                                    </p>
+                                    <p>Unknown from, Auckland, New Zealand</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-single">
+                            <div class="notification-time">18h</div>
+                            <div class="notification-content">
+                                <div class="notification-icon-wrapper">
+                                    <img src="./assets/images/missed-call-icon.svg" alt="">
+                                </div>
+                                <div class="notification-content-inner">
+                                    <p>You have a <strong>Missed call </strong> from <strong>Unknown User </strong> on
+                                        site
+                                    </p>
+                                    <p>Unknown from, Auckland, New Zealand</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-single">
+                            <div class="notification-time">18h</div>
+                            <div class="notification-content">
+                                <div class="notification-icon-wrapper">
+                                    <img src="./assets/images/missed-call-icon.svg" alt="">
+                                </div>
+                                <div class="notification-content-inner">
+                                    <p>You have a <strong>Missed call </strong> from <strong>Unknown User </strong> on
+                                        site
+                                    </p>
+                                    <p>Unknown from, Auckland, New Zealand</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="view-all-link">View All Notifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    const button = document.querySelector('.settings-sidebar-toggle');
+    const wrapper = document.querySelector('.settings-page-content');
+
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        wrapper.classList.toggle('toggled');
+        button.classList.toggle('button-toggled');
+    });
+
+    const copyButton = document.querySelector('.btn-copy-code');
+    const tickImage = document.querySelector('.tick-image');
+
+    copyButton.addEventListener('click', (e) => {
+        tickImage.classList.remove('d-none');
+    });
+</script>
+<script>
+    // Add line numbers to each line of code
+    document.querySelectorAll('pre.line-numbers code').forEach((block) => {
+        block.innerHTML = block.innerHTML.split('\n').map((line) => {
+            return `<span>${line}</span>`;
+        }).join('\n');
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
