@@ -30,6 +30,9 @@ body {
 .bg-FCFCFC {
     background-color: #FCFCFC;
 }
+.bg-707070 {
+    background-color: #707070;
+}
 .color-2f {
     color: #2F2F2F;
 }
@@ -2669,4 +2672,265 @@ PopUp Styles End
 .analytics-grid-wrapper {
     max-width: 1120px;
     margin: 0 auto;
+}
+.video-call-wrapper {
+    /* width: 387px; */
+    /* height: 330px; */
+    height: 40vh;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    background-color: #1C1C1C;
+}
+.video-call-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom-videos-wrapper .bottom-video {
+    width: 86px;
+    height: 111px;
+    border-radius: 13px;
+    overflow: hidden;
+}
+.screen-share-actived .bottom-videos-wrapper .bottom-video {
+    width: 47px;
+    height: 38px;
+}
+.screen-share-actived .agent-video {
+    display: block;
+}
+.bottom-videos-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    justify-content: flex-end;
+}
+.agent-video {
+    display: none;
+    margin-right: 10px;
+}
+.video-call-content-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-icons .icon-wrapper {
+    width: 30px;
+    height: 30px;
+    background: rgb(0 0 0 / 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.footer-controls-wrapper {
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%) 27%, rgb(0 0 0 / 44%) 100%);
+}
+.footer-controls .footer-control-single {
+    width: 34px;
+    height: 34px;
+    background: rgb(0 0 0 / 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.footer-controls .footer-control-single:last-child {
+    margin-right: 0;
+}
+.chat-area {
+    background-color: #ffffff;
+    border: 1px solid #ECEFF1;
+    margin-right: 12px;
+    border-top:6px solid #E6FFFC;
+}
+.user-meta .img-wrapper img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user-meta .img-wrapper .status-online {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #28C440;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+}
+.chat-receiver,
+.chat-sender {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+.chat-receiver {
+    justify-content: flex-end;
+}
+.chat-receiver .message {
+    background: #2F2F2F;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 18px;
+    max-width: 80%;
+}
+.chat-sender .message {
+    color: #2F2F2F;
+    background: #EBEBEB;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 18px;
+    max-width: 80%;
+}
+.chat-sender img.sender-img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.chat-form-wrapper button {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+.chat-form-wrapper {
+    border: 1px solid #A7A7A7;
+    position: relative;
+}
+.chat-form-wrapper textarea {
+    border: none;
+    outline: none !important;
+    width: 100%;
+    padding: 20px 50px 0px 20px;
+    height: 50px;
+    font-size: 12px;
+    color: #000000;
+    resize: none;
+}
+.chat-form-wrapper button {
+    position:absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.controls-sidebar-inner {
+    height: calc(100vh - 10px);
+}
+.chat-wrapper {
+    /* height: 364px; */
+    height: calc(56vh - 63px);
+}
+.chat-outer {
+    height: calc(100% - 64px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.chat-inner {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 10px;
+}
+.screen-share-actived .screen-share {
+    background: #ffffff;
+}
+.screen-share-actived .screen-share img {
+    filter: invert(1);
+}
+.screen-share-actived .footer-controls-outer {
+    background-color: #2f2f2f;
+}
+.video-call-wrapper.only-chat > video,
+.video-call-wrapper.only-chat .top-icons-wrapper,
+.video-call-wrapper.only-chat .footer-controls-outer {
+    display: none !important;
+}
+.video-call-wrapper.only-chat .footer-controls-wrapper {
+    background-image: none;
+}
+.video-call-wrapper.only-chat .bottom-videos-wrapper .bottom-video {
+    width: 57px;
+    height: 43px;
+}
+.video-call-wrapper.only-chat .bottom-videos-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.only-chat-controls {
+    display: none;
+}
+.video-call-wrapper.only-chat .only-chat-controls {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.video-call-wrapper.only-chat .video-call-content-wrapper {
+    width: auto;
+    height: auto;
+}
+.only-chat-controls button {
+    display: flex;
+    width: 65px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    flex-direction: column;
+    font-size: 10px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+.only-chat-controls button.video-call-btn:hover {
+    border: 1px solid var(--knock-knock-blue-color);
+}
+.only-chat-controls button .img-wrapper {
+    min-height: 18px;
+}
+.video-call-btn {
+    background: #fff;
+    color: var(--knock-knock-blue-color);
+    margin-right: 10px;
+}
+.audio-call-btn {
+    background:  #2F2F2F;
+    color: #ffffff;
+}
+.only-chat-controls button .hovered-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--knock-knock-blue-color);
+    color: #fff;
+    text-align: center;
+    transition: all ease 0.4s;
+    transform: translateY(100%);
+}
+.only-chat-controls button:hover .hovered-text {
+    transform: translateY(0%);
+}
+.only-chat-controls button.audio-call-btn .hovered-text {
+    color:var(--knock-knock-dark-grey-color);
+    background: #ffffff;
 }

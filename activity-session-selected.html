@@ -451,129 +451,241 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 position-relative">
+                    <div class="col-md-3 position-relative p-0">
                         <div class="scrollable only-y">
-                            <div class="sessions-screen-controls seesion-controls-first d-none">
-                                <div class="user-info-wrapper">
-                                    <div class="user-info">
-                                        <div class="img-wrapper">
-                                            <img src="./assets/images/user.jpg" alt="">
-                                            <div class="status"></div>
-                                        </div>
-                                        <div class="user-controls">
-                                            <h6 class="name">
-                                                Unknown User
-                                            </h6>
-                                            <div class="user-btns">
-                                                <button class="btn">
-                                                    <img src="./assets/images/cam-green-icon.svg" alt="">
-                                                </button>
-                                                <button class="btn">
-                                                    <img src="./assets/images/mic-icon.svg" alt="">
-                                                </button>
+                            <div class="controls-sidebar-inner">
+                                <div class="sessions-screen-controls seesion-controls-first d-none">
+                                    <div class="user-info-wrapper">
+                                        <div class="user-info">
+                                            <div class="img-wrapper">
+                                                <img src="./assets/images/user.jpg" alt="">
+                                                <div class="status"></div>
                                             </div>
+                                            <div class="user-controls">
+                                                <h6 class="name">
+                                                    Unknown User
+                                                </h6>
+                                                <div class="user-btns">
+                                                    <button class="btn">
+                                                        <img src="./assets/images/cam-green-icon.svg" alt="">
+                                                    </button>
+                                                    <button class="btn">
+                                                        <img src="./assets/images/mic-icon.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row user-details">
+                                            <div class="col-4 user-detail-name">
+                                                <img class="me-2" src="./assets/images/location-icon.svg" alt="">
+                                                <p>Location</p>
+                                            </div>
+                                            <div class="col-8 user-detail-value">
+                                                <p class="mb-0">Islamabad</p>
+                                            </div>
+                                            <div class="col-4 user-detail-name">
+                                                <img class="me-2" src="./assets/images/browser-icon.svg" alt="">
+                                                <p>Browser</p>
+                                            </div>
+                                            <div class="col-8 user-detail-value">
+                                                <p class="mb-0">
+                                                    Google Chrome
+                                                </p>
+                                            </div>
+                                            <div class="col-4 user-detail-name">
+                                                <img class="me-2" src="./assets/images/device-icon.svg" alt="">
+                                                <p>Device</p>
+                                            </div>
+                                            <div class="col-8 user-detail-value">
+                                                <p class="mb-0">
+                                                    Laptop
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="top-btns">
+                                            <button class="btn icon-btn">
+                                                <div class="img-wrapper">
+                                                    <img src="./assets/images/cam-icon.svg" alt=""> 
+                                                </div>
+                                                Start a Video Call
+                                            </button>
+    
+                                            <button class="btn icon-btn">
+                                                <div class="img-wrapper">
+                                                    <img src="./assets/images/Icon-material-chat-bubble.svg" alt="">    
+                                                </div>
+                                                Start chat
+                                            </button>
+                                            <button class="btn icon-btn" data-bs-toggle="modal" data-bs-target="#incomingCallModal">
+                                                <div class="img-wrapper">
+                                                    <img src="./assets/images/chat-with-interaction.svg" alt="">
+                                                </div>
+                                                Start Interaction With Chat
+                                            </button>
                                         </div>
                                     </div>
-
-                                    <div class="row user-details">
-                                        <div class="col-4 user-detail-name">
-                                            <img class="me-2" src="./assets/images/location-icon.svg" alt="">
-                                            <p>Location</p>
+    
+                                    <div class="sessions-history">
+                                        <h6>Session History</h6>
+                                        <div class="session-single">
+                                            <div class="row"></div>
+    
+                                            <ul id="items">
+                                                <li class="change-mouse">
+                                                    <div>
+                                                        http://knock-knockapp.com/
+                                                    </div>
+                                                    <div>
+                                                        2024 Aug 20 , 23:55 PM - Active
+                                                    </div>
+                                                </li>
+                                                <li class="change-mouse">
+                                                    <div>
+                                                        http://knock-knockapp.com/
+                                                    </div>
+                                                    <div>
+                                                        2024 Aug 20 , 23:55 PM - Active
+                                                    </div>
+                                                </li>
+                                                <li class="change-mouse">
+                                                    <div>
+                                                        http://knock-knockapp.com/
+                                                    </div>
+                                                    <div>
+                                                        2024 Aug 20 , 23:55 PM - Active
+                                                    </div>
+                                                </li>
+                                                <li class="change-mouse">
+                                                    <div>
+                                                        http://knock-knockapp.com/
+                                                    </div>
+                                                    <div>
+                                                        2024 Aug 20 , 23:55 PM - Active
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="col-8 user-detail-value">
-                                            <p class="mb-0">Islamabad</p>
-                                        </div>
-                                        <div class="col-4 user-detail-name">
-                                            <img class="me-2" src="./assets/images/browser-icon.svg" alt="">
-                                            <p>Browser</p>
-                                        </div>
-                                        <div class="col-8 user-detail-value">
-                                            <p class="mb-0">
-                                                Google Chrome
-                                            </p>
-                                        </div>
-                                        <div class="col-4 user-detail-name">
-                                            <img class="me-2" src="./assets/images/device-icon.svg" alt="">
-                                            <p>Device</p>
-                                        </div>
-                                        <div class="col-8 user-detail-value">
-                                            <p class="mb-0">
-                                                Laptop
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="top-btns">
-                                        <button class="btn icon-btn">
-                                            <div class="img-wrapper">
-                                                <img src="./assets/images/cam-icon.svg" alt=""> 
-                                            </div>
-                                            Start a Video Call
-                                        </button>
-
-                                        <button class="btn icon-btn">
-                                            <div class="img-wrapper">
-                                                <img src="./assets/images/Icon-material-chat-bubble.svg" alt="">    
-                                            </div>
-                                            Start chat
-                                        </button>
-                                        <button class="btn icon-btn" data-bs-toggle="modal" data-bs-target="#incomingCallModal">
-                                            <div class="img-wrapper">
-                                                <img src="./assets/images/chat-with-interaction.svg" alt="">
-                                            </div>
-                                            Start Interaction With Chat
-                                        </button>
                                     </div>
                                 </div>
-
-                                <div class="sessions-history">
-                                    <h6>Session History</h6>
-                                    <div class="session-single">
-                                        <div class="row"></div>
-
-                                        <ul id="items">
-                                            <li class="change-mouse">
-                                                <div>
-                                                    http://knock-knockapp.com/
+                                <div class="video-call-inititated">
+                                    <div class="video-call-wrapper">
+                                        <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
+                                        class="video-player-1" autoplay playsinline></video>
+                                        <div class="only-chat-controls text-center">
+                                            <img class="mb-4" src="./assets/images/chat-thumb.png" alt="">
+                                            <div class="d-flex">
+                                                <button class="video-call-btn">
+                                                    <div class="img-wrapper">
+                                                        <img src="./assets/images/cam-icon-blue.svg" alt="">
+                                                    </div>
+                                                    <span>Video</span>
+                                                    <div class="hovered-text">Start a Video call</div>
+                                                </button>
+                                                <button class="audio-call-btn">
+                                                    <div class="img-wrapper">
+                                                        <img src="./assets/images/mic-btn-icon.svg" alt="">
+                                                    </div>
+                                                    <span>Audio</span>
+                                                    <div class="hovered-text">Start a Audio call</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="video-call-content-wrapper">
+                                            <div class="d-flex justify-content-between align-items-center p-2 top-icons-wrapper">
+                                                <p class="small-10 text-white mb-0">Call duration: <span>32:54:00</span></p>
+                                                <div class="d-flex top-icons">
+                                                    <div class="icon-wrapper">
+                                                        <img src="./assets/images/mic-icon-white.svg" alt="">
+                                                    </div>
+                                                    <div class="d-none" class="icon-wrapper">
+                                                        <img src="./assets/images/mic-icon-muted-white.svg" alt="">
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    2024 Aug 20 , 23:55 PM - Active
+                                            </div>
+                                            <div class="footer-controls-wrapper">
+                                               <div class="bottom-videos-wrapper">
+                                                <div class="bottom-video agent-video">
+                                                    <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
+                                                    class="video-player-1" autoplay playsinline>
+                                                    </video>
                                                 </div>
-                                            </li>
-                                            <li class="change-mouse">
-                                                <div>
-                                                    http://knock-knockapp.com/
+                                                <div class="bottom-video">
+                                                    <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
+                                                    class="video-player-1" autoplay playsinline>
+                                                    </video>
+                                                </div>   
+                                               </div>
+                                               <div class="d-flex justify-content-between px-3 py-3 footer-controls-outer">
+                                                    <div class="d-flex footer-controls">
+                                                        <div class="footer-control-single">
+                                                            <img src="./assets/images/speaker-icon.svg" alt="">
+                                                        </div>
+                                                        <div class="footer-control-single">
+                                                            <img src="./assets/images/mic-icon-white.svg" alt="">
+                                                        </div>
+                                                        <div class="footer-control-single">
+                                                            <img src="./assets/images/camera-icon.svg" alt="">
+                                                        </div>
+                                                        <div class="footer-control-single screen-share">
+                                                            <img src="./assets/images/share-screen-icon.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <img role="button" src="./assets/images/call-end-btn.svg" alt="">
+                                               </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-area">
+                                    <div class="chat-head d-flex justify-content-between align-items-center p-2">
+                                        <div class="user-meta-wrapper d-flex justify-content-center align-items-center">
+                                            <img class="me-2" role="button" src="./assets/images/arrow-down-sign-to-navigate.svg" alt="">
+                                            <div class="user-meta d-flex justify-content-center align-items-center">
+                                                <div class="img-wrapper me-2 position-relative">
+                                                    <img src="./assets/images/chat-user-pic.png" alt="">
+                                                    <span class="status-online"></span>
                                                 </div>
-                                                <div>
-                                                    2024 Aug 20 , 23:55 PM - Active
+                                                <p class="fw-bold small text-black mb-0">
+                                                    Company Name
+                                                    <span class="fw-normal grey-707-color small-10 d-block">192.168.0.1</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="chat-controls-top d-flex justify-content-center align-items-center">
+                                            <button class="me-2 text-uppercase rounded border-0 small-10 grey-707-color bg-EAF1FB fw-bold px-3 py-1">Transfer</button>
+                                            <button class="me-2 text-uppercase rounded border-0 small-10 bg-707070 text-white fw-bold px-3 py-1">End Chat</button>
+                                        </div>
+                                    </div>
+                                    <div class="chat-wrapper">
+                                        <div class="chat-outer">
+                                            <div class="chat-inner" ref="chat_inner_body">
+                                                <div class="chat-receiver">
+                                                    <div class="message">Hello, I am Stuart, marketing
+                                                        marketing manager, How may I help
+                                                        you today?</div>
                                                 </div>
-                                            </li>
-                                            <li class="change-mouse">
-                                                <div>
-                                                    http://knock-knockapp.com/
+                                                <div class="chat-sender">
+                                                    <img class="sender-img" src="./assets/images/chat-user-pic.png" alt="">
+                                                    <div class="message">Hello</div>
                                                 </div>
-                                                <div>
-                                                    2024 Aug 20 , 23:55 PM - Active
-                                                </div>
-                                            </li>
-                                            <li class="change-mouse">
-                                                <div>
-                                                    http://knock-knockapp.com/
-                                                </div>
-                                                <div>
-                                                    2024 Aug 20 , 23:55 PM - Active
-                                                </div>
-                                            </li>
-                                        </ul>
+                                               
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="chat-form-wrapper">
+                                            <textarea type="text"
+                                                placeholder="Enter your reply…"></textarea>
+                                            <button>
+                                                <img src="./assets/images/chat-send-btn.svg" alt="" />
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="video-call-inititated">
-                                <div class="video-call-wrapper">
-                                    <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
-                                    class="video-player-1" autoplay playsinline></video>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -859,5 +971,10 @@ userActiveList.addEventListener('mouseenter', () => {
             userActiveSessionHistory.classList.remove('view-history');
         
 });
+
+
+    document.querySelector('.screen-share').addEventListener('click', (e) => {
+        document.querySelector('.video-call-wrapper').classList.toggle('screen-share-actived');
+    });
 </script>
 </html>
