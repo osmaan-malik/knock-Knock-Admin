@@ -2934,3 +2934,50 @@ PopUp Styles End
     color:var(--knock-knock-dark-grey-color);
     background: #ffffff;
 }
+
+
+.bg-DB0B0B {
+    background-color: #DB0B0B;
+}
+.color-93 {
+    color:#939393;
+}
+.chat-info-wrapper:after {
+    content: '';
+    width: 3px;
+    height: 8px;
+    background-color: #2F2F2F;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.video-call-info .chat-info-wrapper:after{
+    right: 0;
+}
+.single-video {
+    width: 64px;
+    height: 62px;
+    position: relative;
+}
+.single-video video {
+    object-fit: cover;
+    border-radius: 50%;
+}
+.single-video .icon-wrapper {
+    background: rgb(0 0 0 / 40%);
+    width: 22px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.single-video img {
+    max-width: 10px;
+}

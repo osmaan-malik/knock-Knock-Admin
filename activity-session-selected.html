@@ -454,7 +454,7 @@
                     <div class="col-md-3 position-relative p-0">
                         <div class="scrollable only-y">
                             <div class="controls-sidebar-inner">
-                                <div class="sessions-screen-controls seesion-controls-first d-none">
+                                <div class="sessions-screen-controls seesion-controls-first">
                                     <div class="user-info-wrapper">
                                         <div class="user-info">
                                             <div class="img-wrapper">
@@ -511,13 +511,62 @@
                                                 </div>
                                                 Start a Video Call
                                             </button>
-    
+                                            <div class="video-call-info p-3 grey-bordered bg-white mb-4 rounded">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <button class="border-0 bg-DB0B0B py-2 px-3 text-white rounded mb-1">
+                                                           <img class="me-2" src="./assets/images/camera-icon.svg" alt=""> End Call
+                                                        </button>
+                                                        <p class="grey-707-color small mb-0">Duration - <span>01:34</span></p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="single-video me-2">
+                                                            <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
+                                                                class="video-player-1" autoplay playsinline></video>
+                                                            <div class="icon-wrapper">
+                                                                <img src="./assets/images/mic-icon-white.svg" alt="">
+                                                            </div>
+                                                            <div class="icon-wrapper d-none">
+                                                                <img src="./assets/images/mic-icon-muted-white.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-video">
+                                                            <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
+                                                                class="video-player-1" autoplay playsinline></video>
+                                                            <div class="icon-wrapper">
+                                                                <img src="./assets/images/mic-icon-white.svg" alt="">
+                                                            </div>
+                                                            <div class="icon-wrapper d-none">
+                                                                <img src="./assets/images/mic-icon-muted-white.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <hr>
+                                                <div class="chat-info-wrapper rounded pb-2 position-relative pe-2">
+                                                    <p class="mb-1 color-2f">Recent Messages</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <span class="color-93 small"> <img class="me-2" src="./assets/images/Icon-material-chat-bubble.svg" alt=""> Hello how can I help…</span>
+                                                        <span class="small-10"><span class="color-2f">Stuart.</span><span class="color-93"> Just Now</span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
                                             <button class="btn icon-btn">
                                                 <div class="img-wrapper">
                                                     <img src="./assets/images/Icon-material-chat-bubble.svg" alt="">    
                                                 </div>
                                                 Start chat
                                             </button>
+                                            
+                                            <div class="chat-info-wrapper rounded bg-white grey-bordered mb-4 px-4 py-2 position-relative">
+                                                <p class="mb-1 color-2f">Recent Messages</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="color-93 small"> <img class="me-2" src="./assets/images/Icon-material-chat-bubble.svg" alt=""> Hello how can I help…</span>
+                                                    <span class="small-10"><span class="color-2f">Stuart.</span><span class="color-93"> Just Now</span></span>
+                                                </div>
+                                            </div>
+
                                             <button class="btn icon-btn" data-bs-toggle="modal" data-bs-target="#incomingCallModal">
                                                 <div class="img-wrapper">
                                                     <img src="./assets/images/chat-with-interaction.svg" alt="">
@@ -569,7 +618,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="video-call-inititated">
+                                <div class="video-call-inititated  d-none">
                                     <div class="video-call-wrapper">
                                         <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
                                         class="video-player-1" autoplay playsinline></video>
@@ -599,7 +648,7 @@
                                                     <div class="icon-wrapper">
                                                         <img src="./assets/images/mic-icon-white.svg" alt="">
                                                     </div>
-                                                    <div class="d-none" class="icon-wrapper">
+                                                    <div class="icon-wrapper d-none">
                                                         <img src="./assets/images/mic-icon-muted-white.svg" alt="">
                                                     </div>
                                                 </div>
@@ -639,7 +688,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="chat-area">
+                                <div class="chat-area  d-none">
                                     <div class="chat-head d-flex justify-content-between align-items-center p-2">
                                         <div class="user-meta-wrapper d-flex justify-content-center align-items-center">
                                             <img class="me-2" role="button" src="./assets/images/arrow-down-sign-to-navigate.svg" alt="">
