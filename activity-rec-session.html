@@ -147,10 +147,10 @@
                         <div class="px-2 py-2">
                             <h2 class="fw-bold color-2f mb-2">Activities</h2>
                             <ul class="activity-nav d-flex list-unstyled my-4 p-0 justify-content-between">
-                                <li class="active">
+                                <li>
                                     <a class="small text-decoration-none" href="#">Live Sessions</a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a class="small text-decoration-none" href="#">Recorded Sessions</a>
                                 </li>
                             </ul>
@@ -162,6 +162,31 @@
                                         <p class="color-2f h5 mb-0">Users <span class="grey-707-color">3 Unread</span>
                                         </p>
                                     </div>
+                                </div>
+                                <span class="d-block small grey-707-color text-decoration-underline text-end mt-1 me-3 adv-filter" role="button">Advance Filter</span>
+                                <div class="adv-filter-wrapper">
+                                    <div class="form-group mb-2">
+                                        <label class="form-label grey-707-color mb-0 small">Select Url</label>
+                                        <select class="form-select shadow-none" aria-label="Select Url">
+                                            <option selected>Select</option>
+                                            <option value="1">https://www.homebase.co.nz/</option>
+                                            <option value="2">https://www.homebase.co.nz/</option>
+                                            <option value="3">https://www.homebase.co.nz/</option>
+                                            <option value="3">https://www.kiwiwebsitedesign.co.nz/</option>
+                                          </select>
+                                    </div>
+                                    <p class="grey-707-color fw-bold mb-0 py-2">OR</p>
+                                    <div class="form-group mb-3">
+                                        <label for="subPageUrl" class="form-label grey-707-color mb-0 small">Sub Page Url</label>
+                                        <input type="text" class="form-control" id="subPageUrl">
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label grey-707-color small" for="flexCheckDefault">
+                                            Video calls only 
+                                        </label>
+                                    </div>
+                                    <button class="filter-btn">Search</button>
                                 </div>
                                 <div class="scrollable only-y">
                                     <ul class="active-user-list">
@@ -429,7 +454,7 @@
                                     <div class="count">
                                         <div class="timer-wrapper">
                                             <div class="timer-status"> Status:
-                                                <span class="online">Offline</span>
+                                                <span class="offline">Offline</span>
                                             </div>
                                             <div class="timer"> Total Session Time:
                                                 <span>12:23:00</span>
@@ -441,9 +466,6 @@
                             <div class="sessions-screen-wrapper">
                                 <div class="url-wrapper">
                                     <input disabled="" type="text" value="https://kiwiwebsitedesign.nz/">
-                                    <div class="totaltime"> Time on this page:
-                                        <span>00:01:14</span>
-                                    </div>
                                 </div>
                                 <div class="sessions-screen">
                                     <img class="img-fluid" src="./assets/images/session-screen.jpg" alt="">
@@ -454,241 +476,18 @@
                     <div class="col-md-3 position-relative p-0">
                         <div class="scrollable only-y">
                             <div class="controls-sidebar-inner">
-                                <div class="sessions-screen-controls seesion-controls-first d-none">
-                                    <div class="user-info-wrapper">
-                                        <div class="user-info">
-                                            <div class="img-wrapper">
-                                                <img src="./assets/images/user.jpg" alt="">
-                                                <div class="status"></div>
-                                            </div>
-                                            <div class="user-controls">
-                                                <h6 class="name">
-                                                    Unknown User
-                                                </h6>
-                                                <div class="user-btns">
-                                                    <button class="btn">
-                                                        <img src="./assets/images/cam-green-icon.svg" alt="">
-                                                    </button>
-                                                    <button class="btn">
-                                                        <img src="./assets/images/mic-icon.svg" alt="">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="row user-details">
-                                            <div class="col-4 user-detail-name">
-                                                <img class="me-2" src="./assets/images/location-icon.svg" alt="">
-                                                <p>Location</p>
-                                            </div>
-                                            <div class="col-8 user-detail-value">
-                                                <p class="mb-0">Islamabad</p>
-                                            </div>
-                                            <div class="col-4 user-detail-name">
-                                                <img class="me-2" src="./assets/images/browser-icon.svg" alt="">
-                                                <p>Browser</p>
-                                            </div>
-                                            <div class="col-8 user-detail-value">
-                                                <p class="mb-0">
-                                                    Google Chrome
-                                                </p>
-                                            </div>
-                                            <div class="col-4 user-detail-name">
-                                                <img class="me-2" src="./assets/images/device-icon.svg" alt="">
-                                                <p>Device</p>
-                                            </div>
-                                            <div class="col-8 user-detail-value">
-                                                <p class="mb-0">
-                                                    Laptop
-                                                </p>
-                                            </div>
-                                        </div>
-    
-                                        <div class="top-btns">
-                                            <button class="btn icon-btn">
-                                                <div class="img-wrapper">
-                                                    <img src="./assets/images/cam-icon.svg" alt=""> 
-                                                </div>
-                                                Start a Video Call
-                                            </button>
-                                            <div class="video-call-info p-3 grey-bordered bg-white mb-4 rounded">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <button class="border-0 bg-DB0B0B py-2 px-3 text-white rounded mb-1">
-                                                           <img class="me-2" src="./assets/images/camera-icon.svg" alt=""> End Call
-                                                        </button>
-                                                        <p class="grey-707-color small mb-0">Duration - <span>01:34</span></p>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="single-video me-2">
-                                                            <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
-                                                                class="video-player-1" autoplay playsinline></video>
-                                                            <div class="icon-wrapper">
-                                                                <img src="./assets/images/mic-icon-white.svg" alt="">
-                                                            </div>
-                                                            <div class="icon-wrapper d-none">
-                                                                <img src="./assets/images/mic-icon-muted-white.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="single-video">
-                                                            <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
-                                                                class="video-player-1" autoplay playsinline></video>
-                                                            <div class="icon-wrapper">
-                                                                <img src="./assets/images/mic-icon-white.svg" alt="">
-                                                            </div>
-                                                            <div class="icon-wrapper d-none">
-                                                                <img src="./assets/images/mic-icon-muted-white.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </div>
-                                                <hr>
-                                                <div class="chat-info-wrapper rounded pb-2 position-relative pe-2">
-                                                    <p class="mb-1 color-2f">Recent Messages</p>
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <span class="color-93 small"> <img class="me-2" src="./assets/images/Icon-material-chat-bubble.svg" alt=""> Hello how can I help…</span>
-                                                        <span class="small-10"><span class="color-2f">Stuart.</span><span class="color-93"> Just Now</span></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <button class="btn icon-btn">
-                                                <div class="img-wrapper">
-                                                    <img src="./assets/images/Icon-material-chat-bubble.svg" alt="">    
-                                                </div>
-                                                Start chat
-                                            </button>
-                                            
-                                            <div class="chat-info-wrapper rounded bg-white grey-bordered mb-4 px-4 py-2 position-relative">
-                                                <p class="mb-1 color-2f">Recent Messages</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <span class="color-93 small"> <img class="me-2" src="./assets/images/Icon-material-chat-bubble.svg" alt=""> Hello how can I help…</span>
-                                                    <span class="small-10"><span class="color-2f">Stuart.</span><span class="color-93"> Just Now</span></span>
-                                                </div>
-                                            </div>
-
-                                            <button class="btn icon-btn" data-bs-toggle="modal" data-bs-target="#incomingCallModal">
-                                                <div class="img-wrapper">
-                                                    <img src="./assets/images/chat-with-interaction.svg" alt="">
-                                                </div>
-                                                Start Interaction With Chat
-                                            </button>
-                                        </div>
-                                    </div>
-    
-                                    <div class="sessions-history">
-                                        <h6>Session History</h6>
-                                        <div class="session-single">
-                                            <div class="row"></div>
-    
-                                            <ul id="items">
-                                                <li class="change-mouse">
-                                                    <div>
-                                                        http://knock-knockapp.com/
-                                                    </div>
-                                                    <div>
-                                                        2024 Aug 20 , 23:55 PM - Active
-                                                    </div>
-                                                </li>
-                                                <li class="change-mouse">
-                                                    <div>
-                                                        http://knock-knockapp.com/
-                                                    </div>
-                                                    <div>
-                                                        2024 Aug 20 , 23:55 PM - Active
-                                                    </div>
-                                                </li>
-                                                <li class="change-mouse">
-                                                    <div>
-                                                        http://knock-knockapp.com/
-                                                    </div>
-                                                    <div>
-                                                        2024 Aug 20 , 23:55 PM - Active
-                                                    </div>
-                                                </li>
-                                                <li class="change-mouse">
-                                                    <div>
-                                                        http://knock-knockapp.com/
-                                                    </div>
-                                                    <div>
-                                                        2024 Aug 20 , 23:55 PM - Active
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="video-call-inititated">
                                     <div class="video-call-wrapper">
-                                        <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
-                                        class="video-player-1" autoplay playsinline></video>
-                                        <div class="only-chat-controls text-center">
-                                            <img class="mb-4" src="./assets/images/chat-thumb.png" alt="">
-                                            <div class="d-flex">
-                                                <button class="video-call-btn">
-                                                    <div class="img-wrapper">
-                                                        <img src="./assets/images/cam-icon-blue.svg" alt="">
-                                                    </div>
-                                                    <span>Video</span>
-                                                    <div class="hovered-text">Start a Video call</div>
-                                                </button>
-                                                <button class="audio-call-btn">
-                                                    <div class="img-wrapper">
-                                                        <img src="./assets/images/mic-btn-icon.svg" alt="">
-                                                    </div>
-                                                    <span>Audio</span>
-                                                    <div class="hovered-text">Start a Audio call</div>
-                                                </button>
+                                        <div class="video-player-wrapper h-100 position-relative">
+                                            <img class="img-fluid h-100 w-100 object-fit-cover" src="./assets/images/video-thumbnail.png" alt="">
+                                            <div class="play-btn-icon">
+                                                <img src="./assets/images/player-icon.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="video-call-content-wrapper">
-                                            <div class="d-flex justify-content-between align-items-center p-2 top-icons-wrapper">
-                                                <p class="small-10 text-white mb-0">Call duration: <span>32:54:00</span></p>
-                                                <div class="d-flex top-icons">
-                                                    <div class="icon-wrapper">
-                                                        <img src="./assets/images/mic-icon-white.svg" alt="">
-                                                    </div>
-                                                    <div class="icon-wrapper d-none">
-                                                        <img src="./assets/images/mic-icon-muted-white.svg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="footer-controls-wrapper">
-                                               <div class="bottom-videos-wrapper">
-                                                <div class="bottom-video agent-video">
-                                                    <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
-                                                    class="video-player-1" autoplay playsinline>
-                                                    </video>
-                                                </div>
-                                                <div class="bottom-video">
-                                                    <video src="./assets/images/demo-video.mp4" style="width: 100%; height: 100%"
-                                                    class="video-player-1" autoplay playsinline>
-                                                    </video>
-                                                </div>   
-                                               </div>
-                                               <div class="d-flex justify-content-between px-3 py-3 footer-controls-outer">
-                                                    <div class="d-flex footer-controls">
-                                                        <div class="footer-control-single">
-                                                            <img src="./assets/images/speaker-icon.svg" alt="">
-                                                        </div>
-                                                        <div class="footer-control-single">
-                                                            <img src="./assets/images/mic-icon-white.svg" alt="">
-                                                        </div>
-                                                        <div class="footer-control-single">
-                                                            <img src="./assets/images/camera-icon.svg" alt="">
-                                                        </div>
-                                                        <div class="footer-control-single screen-share">
-                                                            <img src="./assets/images/share-screen-icon.svg" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <img role="button" src="./assets/images/call-end-btn.svg" alt="">
-                                               </div>
-                                               
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
-                                <div class="chat-area  d-none">
+                                <div class="chat-area">
                                     <div class="chat-head d-flex justify-content-between align-items-center p-2">
                                         <div class="user-meta-wrapper d-flex justify-content-center align-items-center">
                                             <img class="me-2" role="button" src="./assets/images/arrow-down-sign-to-navigate.svg" alt="">
@@ -1022,8 +821,9 @@ userActiveList.addEventListener('mouseenter', () => {
 });
 
 
-    document.querySelector('.screen-share').addEventListener('click', (e) => {
-        document.querySelector('.video-call-wrapper').classList.toggle('screen-share-actived');
+
+    document.querySelector('.adv-filter').addEventListener('click', (e) => {
+        document.querySelector('.adv-filter-wrapper').classList.toggle('adv-filter-active');
     });
 </script>
 </html>
